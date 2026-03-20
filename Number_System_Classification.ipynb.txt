@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPJXuk09P/PAgRQoe1iEDHO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mithilesh1262/Davis_lab_work/blob/main/Number_System_Classification.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KQy3UodIl5At",
+        "outputId": "d3053cdd-111e-4272-99e8-9d32c1dcdd66"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Number: 1\n",
+            "Positive\n",
+            "Odd\n",
+            "\n",
+            "Number: -2\n",
+            "Negative\n",
+            "Even\n",
+            "\n",
+            "Number: 0\n",
+            "Zero\n",
+            "\n",
+            "Number: 5\n",
+            "Positive\n",
+            "Odd\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Number System Classification\n",
+        "\n",
+        "def classify(num):\n",
+        "    if num > 0:\n",
+        "        print(\"Positive\")\n",
+        "    elif num < 0:\n",
+        "        print(\"Negative\")\n",
+        "    else:\n",
+        "        print(\"Zero\")\n",
+        "\n",
+        "    # Even or Odd\n",
+        "    if num != 0:\n",
+        "        if num % 2 == 0:\n",
+        "            print(\"Even\")\n",
+        "        else:\n",
+        "            print(\"Odd\")\n",
+        "\n",
+        "numbers = [1, -2, 0, 5]\n",
+        "\n",
+        "for n in numbers:\n",
+        "    print(\"\\nNumber:\", n)\n",
+        "    classify(n)"
+      ]
+    }
+  ]
+}
