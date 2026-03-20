@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPVXuFN/WiclZ1bnweZ7l9n",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mithilesh1262/Davis_lab_work/blob/main/check_Even_odd.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TVLCPHHPE1Iu",
+        "outputId": "95587951-b983-4ac6-af6f-1e019f51e68b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 5\n",
+            "The number is Odd\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Function to check odd or even\n",
+        "def check_odd_even(num):\n",
+        "    if num % 2 == 0:\n",
+        "        print(\"The number is Even\")\n",
+        "    else:\n",
+        "        print(\"The number is Odd\")\n",
+        "\n",
+        "# Taking input from the user\n",
+        "number = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "# Calling the function\n",
+        "check_odd_even(number)"
+      ]
+    }
+  ]
+}
