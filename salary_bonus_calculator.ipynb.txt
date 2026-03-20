@@ -1,0 +1,72 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPyZeyBgtgo3J8M3ilKkDgp",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mithilesh1262/Davis_lab_work/blob/main/salary_bonus_calculator.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cFnlC5AyoeET",
+        "outputId": "6dbfa395-c448-4934-b490-18d4ee2ced83"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter salary: 0\n",
+            "Enter experience: 12\n",
+            "Bonus: 0.0\n",
+            "Enter salary: 50000\n",
+            "Enter experience: 10\n",
+            "Bonus: 10000.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Salry_bonus_calculator\n",
+        "\n",
+        "def bonus(salary, exp):\n",
+        "    if exp >= 10:\n",
+        "        return salary * 0.20\n",
+        "    elif exp >= 5:\n",
+        "        return salary * 0.10\n",
+        "    else:\n",
+        "        return salary * 0.05\n",
+        "\n",
+        "for i in range(3):\n",
+        "    sal = float(input(\"Enter salary: \"))\n",
+        "    exp = int(input(\"Enter experience: \"))\n",
+        "\n",
+        "    print(\"Bonus:\", bonus(sal, exp))"
+      ]
+    }
+  ]
+}
