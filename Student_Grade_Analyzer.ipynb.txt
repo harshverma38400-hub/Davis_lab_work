@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNm0mLB+G0ROmSbREr3c8WR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mithilesh1262/Davis_lab_work/blob/main/Student_Grade_Analyzer.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QyhDG_jAjXSv",
+        "outputId": "09bf6e15-d2c1-47b5-c589-4bf252ce6d93"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter marks: 95\n",
+            "Grade: A\n",
+            "Enter marks: 56\n",
+            "Grade: C\n",
+            "Enter marks: 45\n",
+            "Grade: Fail\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Student Grade Analyzer\n",
+        "\n",
+        "def calculate_grade(marks):\n",
+        "    if marks >= 90:\n",
+        "        return \"A\"\n",
+        "    elif marks >= 75:\n",
+        "        return \"B\"\n",
+        "    elif marks >= 50:\n",
+        "        return \"C\"\n",
+        "    else:\n",
+        "        return \"Fail\"\n",
+        "\n",
+        "# Loop for 5 students\n",
+        "for i in range(5):\n",
+        "    marks = int(input(\"Enter marks: \"))\n",
+        "    grade = calculate_grade(marks)\n",
+        "    print(\"Grade:\", grade)"
+      ]
+    }
+  ]
+}
