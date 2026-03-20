@@ -1,0 +1,70 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMLq76rfTACCI5qo5g8agNf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mithilesh1262/Davis_lab_work/blob/main/patter_print.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8fXKG3x3r46P",
+        "outputId": "645e4e48-63c0-4535-bc1d-f705b86b942a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number of rows: 3\n",
+            "# \n",
+            "* * \n",
+            "# # # \n"
+          ]
+        }
+      ],
+      "source": [
+        "# Input number of rows\n",
+        "rows = int(input(\"Enter number of rows: \"))\n",
+        "\n",
+        "# Loop through each row\n",
+        "for i in range(1, rows + 1):\n",
+        "    # Check if row is even or odd\n",
+        "    if i % 2 == 0:\n",
+        "        symbol = \"*\"  # even row\n",
+        "    else:\n",
+        "        symbol = \"#\"  # odd row\n",
+        "\n",
+        "    # Print symbols for the row\n",
+        "    for j in range(i):\n",
+        "        print(symbol, end=\" \")\n",
+        "    print()  # move to next line"
+      ]
+    }
+  ]
+}
